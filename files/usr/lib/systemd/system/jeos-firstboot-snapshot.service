@@ -25,7 +25,6 @@ Type=oneshot
 RemainAfterExit=yes
 # In Pre - if creation fails, don't do the configuration again
 ExecStartPre=/usr/bin/rm -f /var/lib/YaST2/reconfig_system
-ExecStartPre=/usr/bin/rm -rf /var/lib/combustion/done
 ExecStart=/usr/sbin/jeos-firstboot-snapshot
 
 [Install]

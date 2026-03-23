@@ -43,7 +43,7 @@ if [ -e /etc/.ignition-result.json ] && grep -q '"userConfigProvided":.*true' /e
 	exit 0
 fi
 
-if [ -e /var/lib/combustion/done ]; then
+if [ -e /etc/.combustion-result.json ]; then
 	echo $"System configured with combustion, skipping jeos-firstboot"
 	exit 0
 fi
